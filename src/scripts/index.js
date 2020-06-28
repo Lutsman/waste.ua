@@ -1,2 +1,2 @@
 import './app';
-import '../styles/styles.less';
+import '../styles/styles.scss';

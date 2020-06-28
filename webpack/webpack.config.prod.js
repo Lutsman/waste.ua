@@ -31,12 +31,12 @@ module.exports = merge(common, {
                 use: 'babel-loader'
             },
             {
-                test: /\.(less|css)$/,
-                use: extractor.extract(['css-loader?minimize=true', 'less-loader'])
+                test: /\.css$/,
+                use: extractor.extract(['css-loader?minimize=true', 'postcss-loader']),
             },
             {
                 test: /\.scss$/,
-                use: extractor.extract(['css-loader?minimize=true', 'sass-loader'])
+                use: extractor.extract(['css-loader?minimize=true', 'postcss-loader', 'sass-loader'])
             },
         ]
     }

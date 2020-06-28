@@ -1,5 +1,5 @@
 import '@babel/polyfill';
 
-import './uikit';
+import './bootstrap';
 import './fontawesome';
 import './select2';

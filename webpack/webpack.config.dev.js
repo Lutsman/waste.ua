@@ -23,26 +23,17 @@ module.exports = merge(common, {
     ],
     module: {
         rules: [
-            // {
-            //   test: /\.(js)$/,
-            //   include: Path.resolve(__dirname, '../src'),
-            //   enforce: "pre",
-            //   loader: 'eslint-loader',
-            //   options: {
-            //     emitWarning: true,
-            //   }
-            // },
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
             },
             {
-                test: /\.(less|css)$/,
-                use: ['style-loader', 'css-loader?sourceMap=true', 'resolve-url-loader', 'less-loader']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader?sourceMap=true', 'resolve-url-loader', 'sass-loader']
+                use: ['style-loader', 'css-loader?sourceMap=true', 'postcss-loader', 'resolve-url-loader', 'sass-loader'],
             },
         ]
     }

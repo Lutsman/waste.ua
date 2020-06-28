@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const autoprefixer = require('autoprefixer');
 
 const dest = Path.join(__dirname, '../dist');
 
@@ -33,6 +34,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+        // autoprefixer,
     ],
     module: {
         rules: [
