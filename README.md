@@ -1,8 +1,8 @@
-# webpack-uikit
+# webpack-bootstrap
 
 features:
-- uikit through CDN v3.0.0
-- less
+- bootstrap v4.5.0
+- scss
 - es7, stage-0
 - jquery v3.3.1 (global variable $, import not needed)
 - font awesome v5.7.2
