@@ -1,0 +1,36 @@
+.banners {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $breakpoint-md) {
+      width: 50%;
+    }
+
+    // Modifier
+    &_visible {
+
+      &_mobile {
+        @media (min-width: $breakpoint-md) {
+          display: none;
+        }
+      }
+
+      &_desktop {
+        display: none;
+
+        @media (min-width: $breakpoint-md) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

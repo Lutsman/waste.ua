@@ -1,0 +1,124 @@
+//scroll bar
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+  border-radius: 0
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 0;
+  background: rgba(121, 150, 175, 0.4);
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(121, 150, 175, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(121, 150, 175, 0.8);
+}
+
+body {
+  font-family: $global-font-family;
+  font-size: $global-font-size;
+  font-weight: 400;
+  line-height: $global-line-height;
+  -webkit-text-size-adjust: 100%;
+  background-color: $global-background-color;
+  color: $global-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-weight: 700;}
+
+h1,
+h2 { font-size: 22px; }
+
+h3 { font-size: 16px; }
+
+a {
+  transition: all .15s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  color: $global-link-color;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+
+  &:active,
+  &:hover {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.width-expand {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+}
+
+//Buttons
+
+.btn {
+  border-radius: 0;
+
+  svg {
+    transition: all .15s ease-in-out;
+  }
+
+  &:focus, &.focus {
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    color: #fff;
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:focus, &.focus {
+      box-shadow: none;
+    }
+  }
+}
+

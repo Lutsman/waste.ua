@@ -1,0 +1,19 @@
+.drop-menu {
+  //position: absolute;
+  //top: 0;
+  //bottom: 0;
+  //left: 100%;
+  //z-index: 999;
+
+  display: none;
+  //background-color: $global-background-color;
+
+  .menu__item {
+    padding-left: 60px;
+  }
+}
+
+
+.drop-submenu {
+  display: none; //#TODO: remove double!!! .drop-menu
+}

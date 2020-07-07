@@ -1,0 +1,31 @@
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+
+  &__item {
+
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $global-font-color;
+
+    > span {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 26px;
+    height: 26px;
+    fill: $primary-color;
+  }
+}

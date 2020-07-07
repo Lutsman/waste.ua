@@ -1,7 +1,9 @@
-.start{
-  transform: translate(50%);
+@import "variables";
+@import "base";
+@import "navs";
+@import "menu";
+@import "drop-menu";
+@import "header";
+@import "sidebar";
+@import "banners";
 
-  .end {
-    transition: 1s;
-  }
-}
